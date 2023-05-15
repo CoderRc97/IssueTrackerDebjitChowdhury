@@ -1,0 +1,14 @@
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid flex justify-content-between">
+      
+            <a class="navbar-brand" href="/">
+                Issue Tracker
+            </a>
+        
+            <% if( title === "Project Page"){ %> <%- include('_issueform'); %> <%
+            }else{ %> <%- include('_projectform'); %> <% } %>
+       
+        
+    </div>
+    
+  </nav>
